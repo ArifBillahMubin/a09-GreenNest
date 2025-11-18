@@ -1,16 +1,66 @@
-# React + Vite
+## Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GreenNest focuses on providing a calm, nature-inspired UI for plant enthusiasts.  
+Key highlights:
 
-Currently, two official plugins are available:
+- Indoor plant products loaded from a local `plants.json` file.
+- Secure authentication using Firebase (Login, Signup, Google Sign-In, Forgot Password).
+- Protected route for plant details and profile-related pages.
+- Consultation booking form on the plant details page.
+- Responsive and minimal layout using Tailwind CSS and DaisyUI.
+- Smooth navigation with React Router (SPA, no full-page reload).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Main Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive layout with Navbar and Footer visible on all routes.
+- Hero section with slider (Swiper or Framer Motion) featuring plant banners and care slogans.
+- Top Rated Indoor Plants section – cards loaded from JSON with image, name, price, rating, and details button.
+- Plant Care Tips section – static content about watering, sunlight, and fertilizing.
+- “Meet Our Green Experts” – 3–4 experts with image, name, and specialization.
+- extra section such as “Eco Decor Ideas” or “Plant of the Week”.
+- Plant Details page (Protected Route):
+  - Large plant image, description, price, rating, stock, care level, provider.
+  - “Book Consultation” form (name, email) with success toast on submit.
+- Authentication:
+  - Login with email/password and Google Sign-In.
+  - Signup with name, email, photo URL, password.
+  - Password validation: at least one uppercase, one lowercase, minimum length 6.
+  - Forgot Password – sends password reset email via Firebase.
+- My Profile page:
+  - Shows user name, email, photo.
+  - “Update Profile” button using Firebase `updateProfile()` to change displayName and photoURL.
+- Toast-based success and error messages (no default browser alerts).
+- Single Page Application behavior with React Router.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Main Technologies
+
+- React  
+- React Router 
+- Tailwind CSS  
+- DaisyUI  
+- Firebase Authentication  
+- Swiper / Framer Motion  
+- React Icons  
+
+---
+
+## Dependencies
+
+The project mainly uses the following dependencies:
+
+- react  
+- react-router
+- firebase  
+- tailwindcss  
+- daisyui  
+- swiper
+- react-hot-toast  
+- react-icons  
+
+
+---
+
