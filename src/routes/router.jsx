@@ -11,6 +11,7 @@ import LoaderSpinner from "../components/LoaderSpinner";
 import UpdateProfileForm from "../pages/UpdateProfile";
 import ErrorPages from "../pages/ErrorPages";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 
 const router = createBrowserRouter([
     {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
             {
                 path:'/about',
                 Component:About
+            },
+            {
+                path:'/contact',
+                Component:Contact
             }
         ]
     }
