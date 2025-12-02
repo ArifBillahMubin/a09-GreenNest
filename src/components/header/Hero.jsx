@@ -36,7 +36,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="w-full h-[500px] relative overflow-hidden">
+        <section className="w-full h-[500px] relative overflow-hidden mt-[70px]">
             <Swiper
                 modules={[Autoplay, Pagination, Navigation]}
                 spaceBetween={0}
