@@ -14,7 +14,7 @@ const MainLayout = () => {
                 <Navbar></Navbar>
                 {/* <Hero></Hero> */}
             </header>
-            <main className='flex-1'>
+            <main className='flex-1 mt-[70px]'>
                 {state == "loading" ? <LoaderSpinner></LoaderSpinner> : <Outlet></Outlet>}
             </main>
             <footer>

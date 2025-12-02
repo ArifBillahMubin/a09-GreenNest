@@ -38,7 +38,13 @@ const Navbar = () => {
     const links = <>
         <li className='text-base-300 font-semibold'><NavLink to={'/'}>Home</NavLink></li>
         <li className='text-base-300 font-semibold'><NavLink to={'/allPlants'}>Plants</NavLink></li>
-        <li className='text-base-300 font-semibold'><NavLink to={'/myProfile'}>My Profile</NavLink></li>
+        <li className='text-base-300 font-semibold'><NavLink to="/about">About Us</NavLink></li>
+        <li className='text-base-300 font-semibold'><NavLink to="/contact">Contact</NavLink></li>
+        <li className='text-base-300 font-semibold'><NavLink to="/support">Support</NavLink></li>
+
+        {user && (
+            <li><NavLink to="/myProfile">My Profile</NavLink></li>
+        )}
     </>
     return (
         <div className="fixed top-0 left-0 w-full z-50 bg-base-200 shadow-sm">

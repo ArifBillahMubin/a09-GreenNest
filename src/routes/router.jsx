@@ -10,6 +10,7 @@ import PrivateRoute from "../provider/PrivateRoute";
 import LoaderSpinner from "../components/LoaderSpinner";
 import UpdateProfileForm from "../pages/UpdateProfile";
 import ErrorPages from "../pages/ErrorPages";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
     {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
                 path:'/updateProfile',
                 Component: UpdateProfileForm
 
+            },
+            {
+                path:'/about',
+                Component:About
             }
         ]
     }
