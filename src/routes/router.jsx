@@ -12,6 +12,7 @@ import UpdateProfileForm from "../pages/UpdateProfile";
 import ErrorPages from "../pages/ErrorPages";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Support from "../pages/Support";
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
                 path: '/plantsDetail/:id',
                 loader: () => fetch('/allPlantsData.json'),
                 hydrateFallbackElement:<LoaderSpinner></LoaderSpinner>,
-                element: <PrivateRoute><PlantsDetails></PlantsDetails></PrivateRoute>
+                element: <PlantsDetails></PlantsDetails>
             },
             {
                 path:'/login',
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
             {
                 path:'/contact',
                 Component:Contact
+            },
+            {
+                path: '/support',
+                Component:Support
             }
         ]
     }

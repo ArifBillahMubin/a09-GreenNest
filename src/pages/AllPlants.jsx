@@ -28,7 +28,7 @@ const AllPlants = () => {
     return (
         <div className='w-11/12 mx-auto py-20'>
             <title>Plants</title>
-            <div className='flex justify-between items-center mb-8'>
+            <div className='flex flex-col md:flex-row gap-5 items-center mb-8'>
                 <h1 className='text-xl font-bold'><span>({allData.length})</span> Plants Found</h1>
                 <div className="relative w-60">
                     <FaSearch className='absolute top-2 w-[25px] left-2 z-10' />
